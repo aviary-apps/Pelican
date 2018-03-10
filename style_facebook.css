@@ -1,0 +1,53 @@
+/* .fbPlaceFlyout div{
+  background: black;
+}
+
+.fbFeedTicker {
+  background: transparent;
+  border-width: 0px;
+}
+.uiBoxWhite, .uiSideHeader, .groupProfileHeaderWash {
+  background-color: black;
+}
+.ego_column {
+  padding: 5px;
+}
+
+#chromeFacebookbackground {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-color:black;
+}
+
+#navSearch .uiSearchInput {
+	border-top: none;
+}
+
+#pageNav .navItem a.targetAfter:after, #contentCurve {
+	display: none;
+}
+
+#footerContainer {
+	border-top: none !important;
+}
+
+
+html{
+	zoom:125%;
+}
+body{
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+
+.spinner-wrapper {
+	position: absolute;
+top: 48%;
+left: 48%;
+	right: 0;
+	bottom: 0;
+	background-color: #ff6347;
+	z-index: 999999;
+	} */
