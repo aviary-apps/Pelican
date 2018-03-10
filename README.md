@@ -10,7 +10,7 @@ Pelicon is a chrome extension which makes Facebook more minimal and focused :shi
 
 
 <a href="https://github.com/aviary-apps/Pelicon/releases/latest">
-	<img src="assets/img/minimal.png" width="846">
+	<img src="assets/img/thumbnail.png" width="846">
 </a>
 
 
@@ -36,9 +36,11 @@ You can toggle in the popup to have a Focused version of Facebook.
 
 You can toggle in the popup to have a minimal version of Facebook.
 
--  Only keeps timeline and other features.
+-  Only keeps timeline from main content.
 
-
+<a href="https://github.com/aviary-apps/Pelicon/releases/latest">
+	<img src="assets/img/minimal.png" width="846">
+</a>
 
 
 ## Customization
