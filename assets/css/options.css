@@ -1,0 +1,93 @@
+#userName {
+	color: white;
+	margin:20px 10px 0 0;
+}
+#img_preview {
+	max-width: 300px;
+	max-height: 200px;
+	margin-top: 15px;
+}
+
+#imageEffects {
+	display: none;
+	margin-top: 15px;
+}
+
+#catalog div{
+	float:left;
+}
+#catalog img {
+	max-width: 293px; height: 195px; width: auto;
+}
+#catalog button {
+	float: right;
+	margin-top: -43px;
+	cursor: pointer;
+	position:absolute;
+	right: 38px;
+}
+#catalog button.open-preview {
+	top: 154px;
+}
+#catalog div.outer {
+	margin: 0px 7px 8px 0px;
+	text-align: center;
+}
+#catalog div.inner {
+	overflow: hidden;
+	position: relative;
+	width: 276px;
+}
+
+#catalog span.info {
+	position: absolute;
+	display: block;
+	left: 44px;
+	bottom: -50px;
+	color: white;
+	padding: 3px;
+	background-color: rgba(125, 0, 0, 0.85);
+	line-height: 20px;
+	-webkit-transition: bottom .5s;
+	margin-left: -20px;
+	font-size: 14px;
+}
+
+#catalog div:hover span.info {
+	bottom: 0px;
+}
+
+
+#carousel {
+	width: 800px;
+	max-width: 100%;
+	margin: 0px auto;
+	margin-bottom: 15px;
+}
+.carousel-control {
+	top: 50%;
+}
+.carousel-caption button {
+	float: right;
+}
+.carousel-inner > .item > img {
+	width: 100%;
+}
+
+#background-width-settings-title {
+	border-bottom: 1px dashed gray;
+	display: inline-block;
+}
+#background-width-settings {
+	display: block;
+}
+#uploadBtn, #removeBtn {
+    margin: 5px 5px 0 0;
+}
+#log-in-help {
+	color: white;
+	font-size: 13px;
+	display: inline-block;
+	margin: 20px 0 0 9px;
+	vertical-align: middle;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Anna</title>
+  <link rel="stylesheet" href="./css/material.min.css">
+  <!-- <link rel="stylesheet" href="elate/css/icomoon.css"> -->
+  <link rel="stylesheet" href="./css/popup.css">
+  <link rel="stylesheet" type="text/css" href="css/on-off-switch.css" />
+  <link rel="stylesheet" href="./css/reset.min.css">
+  <link rel='stylesheet prefetch' href='./css/bootstrap.min.css'>
+</head>
+
+<body>
+  <header>
+    <div id="icon">
+      <img src="icons/icon128.png" alt="">
+    </div>
+    <div id="version">
+      Version 1.0
+    </div>
+  </header>
+  <main>
+    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+      <div class="mdl-tabs__tab-bar">
+        <!-- <a href="#settings" class="mdl-tabs__tab is-active"> -->
+        <span>Pelicon Facebook</span>
+        <!-- </a> -->
+        <!-- <a href="#help" class="mdl-tabs__tab ">
+          <span>Help?</span>
+        </a> -->
+      </div>
+      <div class="mdl-tabs__panel is-active" id="settings">
+        <!-- <b>
+          <h5>Toggle the Features</h5>
+        </b> -->
+        <ul class="mdl-list">
+
+
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <!-- <span class="mdl-list__item-avatar">
+                    <img src="./img/icon.png" />
+                  </span> -->
+              Minimal Mode
+            </span>
+            <span class="mdl-list__item-secondary-action">
+              <label class="onoff-switch">
+                <!-- <input type="checkbox" id="status-icon"> -->
+                <input type="checkbox" id="status-icon" class="btn btn-xs btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off">
+                <div class="handle"></div>
+              </label>
+            </span>
+          </li>
+
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <!-- <span class="mdl-list__item-avatar">
+                <img src="./img/icon.png" />
+              </span> -->
+              Focus Mode
+              
+            </span>
+            <span class="mdl-list__item-secondary-action">
+              <label class="onoff-switch">
+                <!-- <input type="checkbox" id="onoff-switch"> -->
+                <input type="checkbox" id="onoff-switch" class="btn btn-xs btn-toggle active" data-toggle="button" aria-pressed="true" autocomplete="off">
+                <div class="handle"></div>
+              </label>
+            </span>
+          </li>
+
+
+        </ul>
+      </div>
+
+    
+    </div>
+
+
+
+    <div id="footer" class="top">
+        <ul class="footer-links">
+          <li class="link">
+            <a href="https://github.com/aviary-apps/Pelicon" target="_blank" >
+              Github
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-links">
+            <li class="link">
+              <a href="https://github.com/aviary-apps/Pelicon" target="_blank" >
+                Rate Us
+              </a>
+            </li>
+          </ul>
+      </div>
+    </footer>
+  </main>
+
+  <script src='./js/vendor/jquery-3.2.0.min.js'></script>
+  <script src='./js/vendor/material.min.js'></script>
+  <script src="js/tether.min.js"></script>
+  <script src='./js/vendor/bootstrap.min.js'></script>
+
+  <script src='./js/popup.js'></script>
+  <script type="text/javascript" src="js/on-off-switch.js"></script>
+  <script type="text/javascript" src="js/on-off-switch-onload.js"></script>
+  <script type="text/javascript" src="js/on-off.js"></script>
+</body>
+
+</html>
