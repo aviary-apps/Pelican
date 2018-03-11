@@ -11,6 +11,16 @@
   <link rel="stylesheet" type="text/css" href="css/on-off-switch.css" />
   <link rel="stylesheet" href="./css/reset.min.css">
   <link rel='stylesheet prefetch' href='./css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='./css/rateus.css'> 
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+<style type="text/css">
+  .clean {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+</style>
 </head>
 
 <body>
@@ -61,7 +71,7 @@
                 <img src="./img/icon.png" />
               </span> -->
               Focus Mode
-              
+
             </span>
             <span class="mdl-list__item-secondary-action">
               <label class="onoff-switch">
@@ -71,29 +81,28 @@
               </label>
             </span>
           </li>
-
-
         </ul>
-      </div>
-
-    
+      </div>    
     </div>
 
-
-
-    <div id="footer" class="top">
+    <div id="footer" class="top" style="margin-top: -40px;">
         <ul class="footer-links">
-          <li class="link">
-            <a href="https://github.com/aviary-apps/Pelicon" target="_blank" >
+          <li class="link" style="font-weight: bold;">
+            <a href="https://github.com/aviary-apps/Pelicon/" target="_blank" >
               Github
             </a>
           </li>
-        </ul>
-        <ul class="footer-links">
+
             <li class="link">
               <a href="https://github.com/aviary-apps/Pelicon" target="_blank" >
-                Rate Us
-              </a>
+                <!-- Rate Us <br> -->
+                  <fieldset class="rating">
+                      <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                      <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                      <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                      <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                      <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                  </fieldset>
             </li>
           </ul>
       </div>
