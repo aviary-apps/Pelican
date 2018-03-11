@@ -1,8 +1,8 @@
-{
-  "name": "Minimal Facebook",
+  {
+  "name": "Pelican Facebook",
   "version": "1.0.0",
   "manifest_version": 2,
-  "description": "Minimal versison of Facebook!",
+  "description": "Minimal and Focused versison of Facebook!",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -23,7 +23,7 @@
   },
   "browser_action": {
     "default_icon": "icons/icon128.png",
-    "default_title": "Pelicon Facebook",
+    "default_title": "Pelican Facebook",
     "default_popup": "popup.html"
   },
   "content_scripts": [

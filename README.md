@@ -1,15 +1,15 @@
-# Pelicon <img src="icons/icon128.png" width="60"> 
+# Pelican <img src="icons/icon128.png" width="60"> 
 
 > Chrome extension for a better Facebook :rocket:
 
-Pelicon is a chrome extension which makes Facebook more minimal and focused :shipit:.
+Pelican is a chrome extension which makes Facebook more minimal and focused :shipit:.
 
-**[Releases](https://github.com/aviary-apps/Pelicon/releases)** &nbsp;&nbsp;
+**[Releases](https://github.com/aviary-apps/Pelican/releases)** &nbsp;&nbsp;
 
 <br>
 
 
-<a href="https://github.com/aviary-apps/Pelicon/releases/latest">
+<a href="https://github.com/aviary-apps/Pelican/releases/latest">
 	<img src="assets/img/thumbnail.png" width="846">
 </a>
 
@@ -38,7 +38,7 @@ You can toggle in the popup to have a minimal version of Facebook.
 
 -  Only keeps timeline from main content.
 
-<a href="https://github.com/aviary-apps/Pelicon/releases/latest">
+<a href="https://github.com/aviary-apps/Pelican/releases/latest">
 	<img src="assets/img/minimal.png" width="846">
 </a>
 
@@ -51,7 +51,7 @@ Clone the repository, make the adjustments you need, and [load the unpacked exte
 
 ## Disclaimer
 
-Pelicon is a third-party app and is not affiliated with Facebook.
+Pelican is a third-party app and is not affiliated with Facebook.
 
 ## License
 
