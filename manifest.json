@@ -1,6 +1,6 @@
   {
     "name": "Pelican Facebook",
-    "version": "1.0.1",
+    "version": "1.4.0",
     "manifest_version": 2,
     "description": "Minimal and Focused versison of Facebook!",
     "icons": {
@@ -10,10 +10,7 @@
     },
     "permissions": [
       "tabs",
-      "http://*.google.com/*",
-      "storage",
-      "unlimitedStorage",
-      "contextMenus"
+      "storage"
     ],
     "background": {
       "scripts": [
@@ -38,6 +35,5 @@
           "js/on-off-switch-onload.js"
         ]
       }
-    ],
-    "content_security_policy": "script-src 'self' https://www.google.com https://checkout.google.com; object-src 'self'"
+    ]
   }
