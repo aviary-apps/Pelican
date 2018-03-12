@@ -1,4 +1,4 @@
-# Pelican <img src="icons/icon128.png" width="60"> 
+# <img src="icons/icon128.png" width="60">  Pelican
 
 > Chrome extension for a better Facebook :rocket:
 
@@ -13,12 +13,14 @@ Pelican is a chrome extension which makes Facebook more minimal and focused :shi
 	<img src="assets/img/thumbnail.png" width="846">
 </a>
 
+## Install
+
+- [Chrome Extension](https://chrome.google.com/webstore/detail/pelican-facebook/kpnklhhobpobgfklmnilcijcejpddhjc)
 
 ## Highlights
 
 - [Focus Mode](#focus-mode)
 - [Minimal Mode](#minimal-mode)
-
 
 
 ## Features
@@ -48,6 +50,11 @@ You can toggle in the popup to have a minimal version of Facebook.
 Clone the repository, make the adjustments you need, and [load the unpacked extension in Chrome](https://developer.chrome.com/extensions/getstarted#unpacked), rather than installing from the Chrome Store.
 
 
+## Contributers
+
+[Gautham Santhosh](https://github.com/gauthamzz)
+[Aswin Vb](https://github.com/aswinzz)
+[Ananya Agrawal](https://github.com/anayana-agrawal)
 
 ## Disclaimer
 
