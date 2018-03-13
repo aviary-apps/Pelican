@@ -52,9 +52,9 @@ Clone the repository, make the adjustments you need, and [load the unpacked exte
 
 ## Contributers
 
-[Gautham Santhosh](https://github.com/gauthamzz)
-[Aswin Vb](https://github.com/aswinzz)
-[Ananya Agrawal](https://github.com/ananya-agrawal)
+- [Gautham Santhosh](https://github.com/gauthamzz)
+- [Aswin Vb](https://github.com/aswinzz)
+- [Ananya Agrawal](https://github.com/ananya-agrawal)
 
 ## Disclaimer
 
