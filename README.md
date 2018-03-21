@@ -55,6 +55,7 @@ Clone the repository, make the adjustments you need, and [load the unpacked exte
 - [Gautham Santhosh](https://github.com/gauthamzz)
 - [Aswin Vb](https://github.com/aswinzz)
 - [Ananya Agrawal](https://github.com/ananya-agrawal)
+- [Aadya Mishra](https://github.com/Panda2498)
 
 ## Disclaimer
 
