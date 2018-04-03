@@ -4,6 +4,8 @@
 
 Pelican is a chrome extension which makes Facebook more minimal and focused :shipit:.
 
+<a href="https://www.buymeacoffee.com/MqTYEIw" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
 **[Releases](https://github.com/aviary-apps/Pelican/releases)** &nbsp;&nbsp;
 
 <br>
