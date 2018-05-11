@@ -63,7 +63,7 @@ function updateBackgroundSettings() {
           <td rowspan=2><img src='https://source.unsplash.com/random/" +
                       screen.width +"x" +screen.height +
                       "/?nature,night' \
-          style='margin-top:-180px;margin-left:-350px;z-index:-1;\
+          style='margin-top:-18em;margin-left:-350px;z-index:-1;\
           '></td> \
         </tr >  \
                     <tr>\
