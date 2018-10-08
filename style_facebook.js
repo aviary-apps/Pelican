@@ -1,5 +1,6 @@
 let a = 1;
 let k = 1;
+let b = 1;
 
 var userData = [];
 setInterval(function() {
@@ -100,19 +101,24 @@ function updateBackgroundSettings() {
 
     chrome.storage.local.get(/* String or Array */ ["statusicon"], function(
       items
-    ) {
+      ) {
       if (items.statusicon === "true") {
-        $(".home_right_column").css("display", "none");
+      $(".home_right_column").css("display", "none");
 
-        $(".fixed_elem").css("display", "none");
-        $("._64b").css("display", "none");
-
-        updateBackgroundSettings();
+      $(".fixed_elem").css("display", "none");
+      $("._64b").css("display", "none");
+      b=2;
+      updateBackgroundSettings();
       } else if (items.statusicon === "false") {
-        //when its not minimal mode (didnt decide what to do here )
+      //when its not minimal mode (didnt decide what to do here )
+      if (b === 2) {
+      location.reload();
+      b = 1;
       }
-    });
-  });
-}
+      }
+      });
+      });
+      }
 
-updateBackgroundSettings();
+      updateBackgroundSettings();
+      
