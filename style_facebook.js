@@ -1,124 +1,158 @@
-let a = 1;
-let k = 1;
-let b = 1;
+let fetch_on_focus_mode = true;
+let minimal_mode = false;
 
-var userData = [];
-setInterval(function() {
+setInterval(function () {
   updateBackgroundSettings();
 }, 1000);
 
-window.onresize = function() {
-  autoWidth();
-};
-autoWidth();
-function autoWidth() {
-  if (userData[0] == "automatic") {
-    $("#chromeFacebookbackground").css("background-size", document.width);
-  }
+///////////////////
+//// Features ////
+/////////////////
+
+function fetchFocusBG() {
+  let quote = "Be yourself; everyone else is already taken.";
+  $(function () {
+    var baseUrl = "https://talaikis.com/api/quotes/random/";
+    $.ajax({
+      url: baseUrl,
+      type: "GET",
+      dataType: "json",
+      success: function (res) {
+        quote = res.quote;
+        author = res.author;
+
+        $("body").css("overflow", "hidden");
+        $("#contentArea").css("z-index", "200");
+
+        $("#bottomContent").html(
+          "\
+          <table >  <tr><td></td>\
+            <td rowspan=2><img src='https://source.unsplash.com/random/" +
+          screen.width + "x" + screen.height +
+          "/?nature,night' \
+              style='margin-top:-180px;margin-left:-350px;z-index:-1;\
+              '></td> \
+            </tr >  \
+            <tr>\
+              <td colspan=2 > <p style='margin-top:-400px;font-size:36px; \
+              font-weight:900;text-transform:uppercase;color:white ; \
+              line-height:55px;margin-left:-200px;max-width:800px;\
+              word-wrap:break-word;'>" +
+          quote +
+          "</p></td>\
+            </tr>  \
+          </table > "
+        );
+      }
+    });
+
+  });
+
 }
+
+function removeLeftSideBar() {
+  $(".uiFutureSideNav").css("display", "none");
+}
+
+function removeRightSideBar() {
+  $(".home_right_column").css("display", "none");
+
+}
+
+function removeNotificationTray() {
+  $("._2t-f").css("display", "none");
+}
+
+function showNotificationTray(){
+  $("._2t-f").css("display", "inline");
+}
+
+function removeTimeline() {
+  $("._5pcb._dp7._4j3f").css("display", "none");
+}
+
+function showTimeline(){
+  $("._5pcb._dp7._4j3f").css("display", "inline");
+}
+
+function UIImprovements(){
+
+    //Remove Footer 
+    $("._64b").css("display", "none");
+}
+
+
+
+
+/////////////////////////////
+//  Extensions main part xD //
+//////////////////////////////
+
 
 function updateBackgroundSettings() {
   if ($("body").hasClass("UIPage_LoggedOut")) return;
-  chrome.extension.sendMessage({ method: "get_vars" }, function(response) {
-    userData = response.variables.split("~~~");
+  chrome.extension.sendMessage({ method: "get_vars" }, function (response) {
+    
+    
+    /////////////////
+    // Focus Mode //
+    ///////////////
 
-    // Focus Mode
-
-    chrome.storage.local.get(/* String or Array */ ["onoffswitch"], function(
+    chrome.storage.local.get(/* String or Array */["onoffswitch"], function (
       items
     ) {
       if (items.onoffswitch === "true") {
-        $("._5pcb._dp7._4j3f").css("display", "none");
-        $("._2t-f").css("display", "none");
-        $(".bottomContent").css("color", "white");
-        $(".home_right_column").css("display", "none");
+        
+        UIImprovements();
+        removeTimeline();
+        removeNotificationTray();
+        removeRightSideBar();
+        removeLeftSideBar();
 
-        $(".uiFutureSideNav").css("display", "none");
-        $("._64b").css("display", "none");
-        //Display Quotes begin
-        if (a === 1) {
-          let quote = "Be yourself; everyone else is already taken.";
-          let author = " Oscar Wilde";
-          $(function() {
-            if (k === 1) {
-              var baseUrl = "https://talaikis.com/api/quotes/random/";
-              $.ajax({
-                url: baseUrl,
-                type: "GET",
-                dataType: "json",
-                success: function(res) {
-                  // console.log(res.quote);
-                  // console.log(res.author);
-                  quote = res.quote;
-                  author = res.author;
-                  // let height =   $(window).height();
-                  // console.log(height)
-                  // let width =   $(window).height();
-
-                  $("body").css("overflow", "hidden");
-                  $("#contentArea").css("z-index", "200");
-
-                  $("#bottomContent").html(
-                    "\
-                    <table >  <tr><td></td>\
-          <td rowspan=2><img src='https://source.unsplash.com/random/" +
-                      screen.width +"x" +screen.height +
-                      "/?nature,night' \
-          style='margin-top:-180px;margin-left:-350px;z-index:-1;\
-          '></td> \
-        </tr >  \
-                    <tr>\
-          <td colspan=2 > <p style='margin-top:-400px;font-size:36px; \
-          font-weight:900;text-transform:uppercase;color:white ; \
-          line-height:55px;margin-left:-200px;max-width:800px;\
-          word-wrap:break-word;'>" +
-                      quote +
-                      "</p></td>\
-        </tr>  \
-      </table > "
-                  );
-                }
-              });
-              k = 2;
-            }
-
-            //Disaply quotes end
-            a = 2;
-          });
+        if (fetch_on_focus_mode === true) {
+          // To ensure that request only goes once
+          // This fucntion returns quote and new background image
+          fetchFocusBG();
+          fetch_on_focus_mode = false;
         }
+
+
       } else if (items.onoffswitch === "false") {
-        $("._5pcb._dp7._4j3f").css("display", "inline");
-        $("._2t-f").css("display", "inline");
-        $("._2s25").css("color", "white");
-        if (a === 2) {
+        
+        showNotificationTray();
+        showTimeline();
+
+        if (fetch_on_focus_mode === false) {
           location.reload();
-          a = 1;
+          fetch_on_focus_mode = true;
         }
       }
     });
 
-    //minimal mode
-
-    chrome.storage.local.get(/* String or Array */ ["statusicon"], function(
+    /////////////////
+    //Minimal mode //
+    ///////////////////
+    
+    chrome.storage.local.get(/* String or Array */["statusicon"], function (
       items
-      ) {
+    ) {
       if (items.statusicon === "true") {
-      $(".home_right_column").css("display", "none");
+        UIImprovements();
+        removeRightSideBar();
+        removeLeftSideBar();
+        minimal_mode = false;
+        updateBackgroundSettings();
+      } 
+      else if (items.statusicon === "false") {
+        //when its not minimal mode (didnt decide what to do here )
+        // at the moment it is just realoading the website
+        if (minimal_mode === true) {
+          location.reload();
+          minimal_mode = false;
+        }
+      }
+    });
+  });
+}
 
-      $(".fixed_elem").css("display", "none");
-      $("._64b").css("display", "none");
-      b=2;
-      updateBackgroundSettings();
-      } else if (items.statusicon === "false") {
-      //when its not minimal mode (didnt decide what to do here )
-      if (b === 2) {
-      location.reload();
-      b = 1;
-      }
-      }
-      });
-      });
-      }
-
-      updateBackgroundSettings();
-      
+updateBackgroundSettings();
