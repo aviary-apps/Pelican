@@ -1,4 +1,4 @@
-# <img src="icons/icon.png" width="60">  Pelican
+# <img src="icons/logopelican.png" width="60">  Pelican
 
 > Chrome extension for a better Facebook :rocket:
 
