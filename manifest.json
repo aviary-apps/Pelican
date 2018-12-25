@@ -4,9 +4,10 @@
     "manifest_version": 2,
     "description": "Minimal and Focused versison of Facebook!",
     "icons": {
-      "16": "icons/icon.png",
-      "48": "icons/icon.png",
-      "128": "icons/icon.png"
+      "16": "icons/logopelican16.png",
+      "32": "icons/logopelican32.png",
+      "48": "icons/logopelican48.png",
+      "128": "icons/logopelican128.png"
     },
     "permissions": [
       "tabs",
@@ -19,7 +20,12 @@
       ]
     },
     "browser_action": {
-      "default_icon": "icons/icon.png",
+      "default_icon": {
+        "16": "icons/logopelican16.png",
+        "32": "icons/logopelican32.png",
+        "48": "icons/logopelican48.png",
+        "128": "icons/logopelican128.png"
+      },
       "default_title": "Pelican Facebook",
       "default_popup": "popup.html"
     },
