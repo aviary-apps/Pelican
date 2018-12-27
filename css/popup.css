@@ -33,7 +33,8 @@ body {
 /* Header CSS */
 
 header {
-    background: linear-gradient(-90deg, #a3bded, #6991c7);
+   /* background: linear-gradient(-90deg, #a3bded, #6991c7); */
+    background-image: url("trianglify.svg");
     justify-content: center;
     position: relative;
     height: 170px;
